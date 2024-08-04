@@ -134,6 +134,22 @@ function demo_game_stats(stats){
 	updateWinners();
 }
 
+function getData() {
+	$.ajax({ 
+		type: 'GET', 
+		crossDomain: true,
+		url: 'https://kabaddi-server.kscode.eu/stats/1',
+		dataType: 'json',
+		Headers: {
+			'Access-Control-Allow-Origin': '*'
+		},
+		success: function (data) { 
+			demo_game_stats(data);
+			
+		}
+	});
+}
+
 
 $(document).ready(function () {
 
@@ -414,23 +430,12 @@ $(document).ready(function () {
 		$("body").toggleClass("hideMenu");
 	});
 	
+	getData();
 
 	// refresh every 10 seconds
 	setInterval(function() {
-		$.ajax({ 
-			type: 'GET', 
-			crossDomain: true,
-			url: 'https://kabaddi-server.kscode.eu/stats/1',
-			dataType: 'json',
-			Headers: {
-				'Access-Control-Allow-Origin': '*'
-			},
-			success: function (data) { 
-				demo_game_stats(data);
-				
-			}
-		});
-	}, 100000);
+		getData();
+	}, 30*1000);
 		
 
 	
