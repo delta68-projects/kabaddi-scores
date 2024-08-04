@@ -1,0 +1,1063 @@
+
+
+
+
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+body {
+    line-height: 1
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+nav ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold
+}
+
+del {
+    text-decoration: line-through
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+input,
+select {
+    vertical-align: middle
+}
+
+strong {
+    font-weight: bold
+}
+
+h1 {
+    font-size: 2em
+}
+
+a,
+a:link,
+a:visited {
+    color: #0099bd
+}
+
+a:hover {
+    color: #03708a
+}
+
+.qc-cmp2-persistent-link {
+    padding: 2px 5px;
+    text-decoration: none;
+    color: #FFF !important;
+    font-weight: normal !important;
+    opacity: 0.6;
+    left: 0;
+    font-size: 13px;
+    right: auto;
+    background: #6b7279
+}
+
+.qc-cmp2-persistent-link:hover {
+    opacity: 0.9
+}
+
+#article .demo,
+#article .saveToggle {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0099bd
+}
+
+#article {
+    display: none;
+    background: #e8f4ff;
+    position: absolute;
+    left: 0;
+    height: 540px;
+    right: 0;
+    z-index: 999;
+    bottom: 0;
+    overflow-y: auto;
+    padding: 10px 30px;
+    box-shadow: 0px 5px 20px #000;
+    color: #404a54
+}
+
+#wrapArticle {
+    max-width: 1100px;
+    margin: auto
+}
+
+.floatright {
+    float: right;
+    margin: 0px 0 10px 20px;
+    width: 33%;
+    max-width: 350px
+}
+
+body {
+    padding: 210px 0 30px 0;
+    font-family: arial;
+    user-select: none
+}
+
+body.hideMenu {
+    padding: 30px 0 30px 0
+}
+
+.navigation {
+    display: none
+}
+
+h1 {
+    margin: 10px 0 10px;
+    font-size: 20px
+}
+
+h2 {
+    margin: 20px 0 10px;
+    font-size: 17px
+}
+
+h3 {
+    margin: 20px 0 5px;
+    font-size: 15px
+}
+
+p,
+ul,
+ol {
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 16px
+}
+
+ol {
+    padding: 0;
+    margin: 0 0 10px 30px
+}
+
+input {
+    outline: none;
+    font-weight: bold;
+    border: none;
+    user-select: text;
+    border-radius: 0
+}
+
+input#embedCode {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 0px 5px;
+    width: 450px;
+    box-shadow: -12px 0px 8px -8px #000 inset
+}
+
+#savedLink a {
+    font-weight: bold;
+    background: #8eff74;
+    padding: 2px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000
+}
+
+#savedLink a:hover {
+    background: #FFF
+}
+
+input.error {
+    background: #f35959 !important;
+    text-shadow: 0px 0px 3px #FFF;
+    color: #000
+}
+
+.showwinner .winner .score {
+    background: #d2a170 !important
+}
+
+.showwinner .loser .team,
+.showwinner .loser .score {
+    opacity: 0.65
+}
+
+#savedLink {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFF;
+    padding: 5px;
+    font-weight: normal;
+    right: 0;
+    background: #616d79;
+    display: none
+}
+
+#closeSaves,
+#closeArticle {
+    border: 3px solid #616d79;
+    position: absolute;
+    top: -10px;
+    font-size: 30px;
+    right: 20px;
+    background: #FFF;
+    color: #000;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    opacity: 0.9;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    z-index: 1111
+}
+
+#closeArticle {
+    top: 5px
+}
+
+#closeSaves:hover,
+#closeArticle:hover {
+    opacity: 1
+}
+
+a#logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 9;
+    opacity: 0.2
+}
+
+a#more,
+a#menu {
+    position: absolute;
+    color: rgb(160, 161, 164);
+    text-decoration: none;
+    padding: 30px;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 9
+}
+
+#logo_left{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 9;
+    opacity: 0.2
+}
+
+a#more:hover,
+a#menu:hover {
+    opacity: 1
+}
+
+a#smallLogo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+    color: #616d79;
+    font-size: 14px;
+    text-decoration: none
+}
+
+a#smallLogo:hover {
+    color: #000
+}
+
+a#menu {
+    top: 0px;
+    bottom: auto;
+    font-size: 40px;
+    font-weight: normal;
+    z-index: 5;
+    padding: 10px 20px
+}
+
+#wrapSettings {
+    z-index: 4;
+    overflow: hidden;
+    font-weight: bold;
+    width: 100%;
+    padding: 20px 0 5px;
+    background: black;
+    margin: 0px auto 20px;
+    border-radius: 0px;
+    color: #616d79;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* height: 160px */
+}
+
+#teams-handle {
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+    background: #616d79;
+    color: #FFF;
+    border: none;
+    cursor: e-resize
+}
+
+#title {
+    text-align: center;
+    display: block;
+    border: none;
+    background: transparent;
+    width: 96%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+    color: #616d79;
+    display: none
+}
+
+.name {
+    width: 100px;
+    display: inline-block;
+    color: white
+}
+
+.input {
+    width: 200px;
+    display: inline-block
+}
+
+#wrapTournament {
+    margin: 0px auto;
+    text-align: center;
+    font-weight: bold
+}
+
+#scrollTournament {
+    overflow-x: auto;
+    width: 100%
+}
+
+#tournament {
+    display: inline-block;
+    text-align: left;
+    min-width: 575px;
+    padding: 10px;
+    opacity: 0.2
+}
+
+#tournament>div {
+    display: block;
+    clear: both
+}
+
+#tournament>div>div>span {
+    color: #000;
+    display: none;
+    height: 35px;
+    line-height: 35px;
+    font-size: 35px;
+    cursor: pointer;
+    text-shadow: 2px 2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, -2px -2px 0 #FFF, 2px 0px 0 #FFF, 0px 2px 0 #FFF, -2px 0px 0 #FFF, 0px -2px 0 #FFF
+}
+
+#tournament>div>div:hover>span,
+#tournament>div>div.focused>span {
+    display: block
+}
+
+.narrow #tournament>div>div>span {
+    height: 25px;
+    line-height: 25px;
+    font-size: 25px
+}
+
+#tournament>div>div {
+    width: 300px;
+    float: left;
+    position: relative;
+    height: 35px;
+    padding: 5px 0
+}
+
+#tournament>div>div.down {
+    padding: 10px 0 0 0
+}
+
+#tournament>div>div.up {
+    padding: 0 0 10px 0
+}
+
+#tournament>div>div input {
+    width: 73%;
+    display: inline-block;
+    background: #c2d7ec;
+    border: none;
+    height: 35px;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    padding: 0 0 0 3%;
+    float: left
+}
+
+#tournament>div>div.up input {
+    box-shadow: 0px 1px 0px inset #9fadbb
+}
+
+#tournament>div>div.down input {
+    box-shadow: 0px -1px 0px inset #9fadbb
+}
+
+#tournament>div>div input:nth-child(2) {
+    width: 24%;
+    float: right;
+    background: #9fadbb;
+    text-align: center;
+    padding: 0
+}
+
+#tournament>div>div:nth-child(2n+1) {
+    width: 27px !important
+}
+
+.hidescore #tournament>div>div input:nth-child(1) {
+    width: 97%
+}
+
+.hidescore #tournament>div>div input:nth-child(2) {
+    display: none
+}
+
+#tournament>div>div.final input:nth-child(2n+1) {
+    width: 98%;
+    outline: none;
+    box-shadow: 0px 0px 0px 2px #9fadbb
+}
+
+#tournament>div>div.first input {
+    width: 100%;
+    text-align: center;
+    background: #616d79;
+    color: #FFF
+}
+
+#tournament>div>div.first {
+    padding: 10px 0 0 0
+}
+
+#tournament>div:nth-child(2n) div.first {
+    padding: 0 0 10px 0
+}
+
+.venue {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0px;
+    display: none
+}
+
+.showvenue .venue {
+    display: block
+}
+
+#tournament>div>div input.info {
+    font-weight: normal;
+    box-shadow: none;
+    width: 97%;
+    background: transparent;
+    height: 20px
+}
+
+.z0,
+.z1,
+.z2,
+.z3,
+.z4,
+.z5,
+.z6,
+.z7,
+.z8,
+.z9,
+.z10,
+.z11,
+.z12,
+.z13 {
+    opacity: 0.6;
+    text-align: center
+}
+
+.z1 {
+    background: url(https://scorecount.com/tournament/35/z1.png) no-repeat center center transparent
+}
+
+.z2 {
+    background: url(https://scorecount.com/tournament/35/z2.png) no-repeat center center transparent
+}
+
+.z5 {
+    background: url(https://scorecount.com/tournament/35/z5.png) no-repeat center center transparent
+}
+
+.z6 {
+    background: url(https://scorecount.com/tournament/35/z6.png) no-repeat center center transparent
+}
+
+.z7 {
+    background: url(https://scorecount.com/tournament/35/z7.png) no-repeat center center transparent
+}
+
+.z8 {
+    background: url(https://scorecount.com/tournament/35/z8.png) no-repeat center center transparent
+}
+
+.z9 {
+    background: url(https://scorecount.com/tournament/35/z9.png) no-repeat center center transparent
+}
+
+.z10 {
+    background: none no-repeat center center transparent
+}
+
+.show2 .row1 .z10,
+.show4 .row2 .z10,
+.show8 .row4 .z10,
+.show16 .row8 .z10,
+.show32 .row16 .z10 {
+    background-image: url(https://scorecount.com/tournament/35/z10.png)
+}
+
+.show2 .row2 .z1,
+.show4 .row3 .z6,
+.show8 .row5 .z6,
+.show16 .row9 .z6,
+.show32 .row17 .z6 {
+    background-image: url(https://scorecount.com/tournament/35/z11.png)
+}
+
+.final {
+    top: 22px;
+    z-index: 99;
+    display: none
+}
+
+.final input {
+    text-align: center !important
+}
+
+.show2 .row1 .final,
+.show4 .row2 .final,
+.show8 .row4 .final,
+.show16 .row8 .final,
+.show32 .row16 .final {
+    display: block
+}
+
+.s4,
+.s8,
+.s16,
+.s32 {
+    display: none !important
+}
+
+.show32 .s2,
+.show32 .s4,
+.show32 .s8,
+.show32 .s16,
+.show32 .s32 {
+    display: block !important
+}
+
+.show16 .s2,
+.show16 .s4,
+.show16 .s8,
+.show16 .s16 {
+    display: block !important
+}
+
+.show8 .s2,
+.show8 .s4,
+.show8 .s8 {
+    display: block !important
+}
+
+.show4 .s2,
+.show4 .s4 {
+    display: block !important
+}
+
+.row {
+    margin: 20px 0;
+    position: relative
+}
+
+.shiftDown {
+    top: -30px;
+    opacity: 0
+}
+
+.checkbox {
+    opacity: 0.8
+}
+
+.checkbox.active {
+    opacity: 1
+}
+
+.checkbox,
+.button {
+    display: inline-block;
+    background: url(https://scorecount.com/tournament/sprite.png) no-repeat 9px -37px #616d79;
+    color: #FFF;
+    padding: 5px 10px 5px 30px;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 3px 5px;
+    border-radius: 10px
+}
+
+.flashit {
+    background-color: #a8a9ab
+}
+
+.hiddenfinalwinner .final,
+.hiddenfinalwinner .winnerLabel,
+.show2 .hiddenfinalwinner .row1 .z10,
+.show4 .hiddenfinalwinner .row2 .z10,
+.show8 .hiddenfinalwinner .row4 .z10,
+.show16 .hiddenfinalwinner .row8 .z10,
+.show32 .hiddenfinalwinner .row16 .z10,
+.show2 .hiddenfinalwinner .row2 .z1,
+.show4 .hiddenfinalwinner .row3 .z6,
+.show8 .hiddenfinalwinner .row5 .z6,
+.show16 .hiddenfinalwinner .row9 .z6,
+.show32 .hiddenfinalwinner .row17 .z6 {
+    display: none !important
+}
+
+.button {
+    background-image: none;
+    padding: 5px 10px 5px 10px
+}
+
+.checkbox.active,
+.button:active {
+    background-position: 9px 3px
+}
+
+.checkbox:hover,
+.ui-slider-handle:hover,
+.button:hover {
+    background-color: #304963 !important
+}
+
+.hidescore #autoadvance {
+    opacity: 0.3
+}
+
+.first {
+    display: none
+}
+
+.ordered .first {
+    display: block
+}
+
+.above {
+    position: absolute;
+    top: -10px
+}
+
+.narrow #tournament>div>div input.info {
+    height: 13px;
+    font-size: 0.8em
+}
+
+.narrow .venue {
+    top: -5px
+}
+
+.narrow #tournament>div>div {
+    position: relative;
+    height: 20px;
+    padding: 5px 0
+}
+
+.narrow #tournament>div>div.down {
+    padding: 5px 0 0 0
+}
+
+.narrow #tournament>div>div.up {
+    padding: 0 0 5px 0
+}
+
+.narrow #tournament>div>div input {
+    border: none;
+    height: 25px
+}
+
+.narrow #tournament>div>div.first {
+    padding: 5px 0 0 0
+}
+
+.narrow #tournament>div:nth-child(2n) div.first {
+    padding: 0 0 5px 0
+}
+
+.narrow .final {
+    top: 13px
+}
+
+.narrow .z1 {
+    background: url(https://scorecount.com/tournament/20/z1.png) no-repeat center center transparent
+}
+
+.narrow .z2 {
+    background: url(https://scorecount.com/tournament/20/z2.png) no-repeat center center transparent
+}
+
+.narrow .z4 {
+    background: url(https://scorecount.com/tournament/20/z4.png) no-repeat center center transparent
+}
+
+.narrow .z5 {
+    background: url(https://scorecount.com/tournament/20/z5.png) no-repeat center center transparent
+}
+
+.narrow .z6 {
+    background: url(https://scorecount.com/tournament/20/z6.png) no-repeat center center transparent
+}
+
+.narrow .z7 {
+    background: url(https://scorecount.com/tournament/20/z7.png) no-repeat center center transparent
+}
+
+.narrow .z8 {
+    background: url(https://scorecount.com/tournament/20/z8.png) no-repeat center center transparent
+}
+
+.narrow .z9 {
+    background: url(https://scorecount.com/tournament/20/z9.png) no-repeat center center transparent
+}
+
+.narrow .z10 {
+    background: none no-repeat center center transparent
+}
+
+.narrow.show2 .row1 .z10,
+.narrow.show4 .row2 .z10,
+.narrow.show8 .row4 .z10,
+.narrow.show16 .row8 .z10,
+.narrow.show32 .row16 .z10 {
+    background-image: url(https://scorecount.com/tournament/20/z10.png)
+}
+
+.narrow.show2 .row2 .z1,
+.narrow.show4 .row3 .z6,
+.narrow.show8 .row5 .z6,
+.narrow.show16 .row9 .z6,
+.narrow.show32 .row17 .z6 {
+    background-image: url(https://scorecount.com/tournament/20/z11.png)
+}
+
+#tournament>div.rounds>div {
+    text-align: center;
+    color: #616d79;
+    height: 20px;
+    padding: 0
+}
+
+#tournament>div.rounds {
+    display: none
+}
+
+@media screen and (max-width:1500px) {
+    .show32 #tournament>div>div {
+        width: 168px
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .show32 #tournament>div>div {
+        width: 123px
+    }
+
+    .show16 #tournament>div>div {
+        width: 157px
+    }
+
+    #logo img {
+        width: 63px
+    }
+
+    a#more {
+        padding: 20px
+    }
+
+    a#logo {
+        position: absolute;
+        left: 10px;
+        top: 20px;
+        bottom: 10px
+    }
+
+    .checkbox,
+    .button {
+        padding: 5px 5px 5px 28px;
+        font-size: 12px;
+        margin: 3px 2px
+    }
+
+    .button {
+        padding: 5px 5px 5px
+    }
+
+    .row {
+        margin: 14px 50px 15px 80px
+    }
+
+    a#more {
+        display: none
+    }
+}
+
+@media screen and (max-width:980px) {
+    .show32 #tournament>div>div {
+        width: 104px
+    }
+
+    .show16 #tournament>div>div {
+        width: 118px
+    }
+
+    .show8 #tournament>div>div {
+        width: 155px
+    }
+
+    #tournament>div>div:nth-child(2n+1) {
+        width: 16px !important
+    }
+
+    input#embedCode {
+        width: 200px
+    }
+}
+
+@media screen and (max-width:777px) {
+    .show16 #tournament>div>div {
+        width: 89px
+    }
+
+    .show8 #tournament>div>div {
+        width: 118px
+    }
+
+    .show4 #tournament>div>div {
+        width: 155px
+    }
+
+    .show32 #tournament>div>div {
+        width: 78px
+    }
+}
+
+@media screen and (max-width:630px) {
+    #wrapSettings {
+        height: 200px
+    }
+
+    body {
+        padding-top: 240px
+    }
+
+    .row {
+        margin: 0px 50px 20px 10px
+    }
+
+    a#logo {
+        display: none
+    }
+}
+
+@media screen and (max-width:450px) {
+    .name {
+        display: none
+    }
+
+    a#menu {
+        padding: 5px 10px
+    }
+
+    .row {
+        margin: 0px 40px 8px 10px
+    }
+
+    .input {
+        width: 150px
+    }
+}
+
+@media screen and (max-height:950px) {
+    #article {
+        height: 450px
+    }
+}
+
+@media screen and (max-height:800px) {
+    #article {
+        height: 350px
+    }
+}
+
+@media screen and (max-height:650px) {
+    #article {
+        top: 0;
+        bottom: 0;
+        height: auto
+    }
+}
