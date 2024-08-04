@@ -420,7 +420,7 @@ $(document).ready(function () {
 		$.ajax({ 
 			type: 'GET', 
 			crossDomain: true,
-			url: 'http://192.168.1.59:5000/stats/1',
+			url: 'https://kabaddi-server.kscode.eu/stats/1',
 			dataType: 'json',
 			Headers: {
 				'Access-Control-Allow-Origin': '*'
@@ -430,7 +430,7 @@ $(document).ready(function () {
 				
 			}
 		});
-	}, 1000);
+	}, 100000);
 		
 
 	
